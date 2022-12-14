@@ -4,7 +4,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(229, 229, 229);
+    background:image("https://speedcubeclub.github.io/cube/assets/img/back.jpg");
 }
 
 #Title {
