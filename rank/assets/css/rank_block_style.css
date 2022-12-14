@@ -11,6 +11,18 @@
    width: 20%;
 }
 
+.New_Person_Name{
+    font-size: large;
+    margin-left: 5%;
+    width: 20%;
+}
+
+.New_Person_Day{
+    font-size: large;
+    margin-left: 5%;
+    width: 20%;
+}
+
 div>.New_Person {
     overflow: auto;
 }
