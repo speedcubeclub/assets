@@ -1,0 +1,10 @@
+.Rank_Page_Block {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    border-radius: 15px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.694);
+}
