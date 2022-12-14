@@ -14,3 +14,12 @@ body {
     width: 100%;
     text-align: center;
 }
+
+.User_Name{
+    font-size: x-large;
+    position: fixed;
+    height: 10%;
+    width: auto;
+    top: 3%;
+    left: 3%;
+}
