@@ -1,3 +1,7 @@
+.Table{
+ width: 100%;
+}
+
 .New_Person {
     border: 1px black;
     width: 100%;
@@ -5,18 +9,20 @@
 
 .New_Person_Time {
    font-size: large;
-   margin-left: 5%;
-   width: 20%;
+   width: 30%;
+   text-align: center;
 }
 
 .New_Person_Name{
     font-size: large;
     margin-left: 5%;
-    width: 20%;
+    width: 40%;
+    text-align: center;
 }
 
 .New_Person_Day{
     font-size: large;
     margin-left: 5%;
-    width: 20%;
+    width: 30%;
+    text-align: center;
 }
