@@ -1,0 +1,16 @@
+.New_Person {
+    float: left;
+    border: 1px black;
+    width: 100%;
+    height: 30px;
+}
+
+.New_Person_Time {
+   font-size: large;
+   margin-left: 5%;
+   width: 20%;
+}
+
+div>.New_Person {
+    overflow: auto;
+}
