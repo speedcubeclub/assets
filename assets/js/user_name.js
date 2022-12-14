@@ -1,8 +1,4 @@
-let Body = document.getElementById("UN");
-
 function User_Name() {
-    let User_Name_dom = document.createElement("div");
+    let User_Name_dom = document.getElementById("User_Name");
     User_Name_dom.innerHTML = sessionStorage.getItem("User_Name");
-    User_Name_dom.className = "User_Name";
-    Body.append(User_Name_dom);
 }
