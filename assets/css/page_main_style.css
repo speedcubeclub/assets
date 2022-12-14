@@ -20,12 +20,9 @@ body {
 
 .User_Name {
     border-radius: 5px;
-    background-color: rgb(199, 199, 255);
+    background-color: rgba(255, 255, 255, 0.694);
     font-size: x-large;
     position: fixed;
-    height: 10%;
-    line-height: 10%;
-    width: auto;
     top: 3%;
     left: 3%;
 }
