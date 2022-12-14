@@ -4,7 +4,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background:image("https://speedcubeclub.github.io/cube/assets/img/back.jpg");
+    background: image("https://speedcubeclub.github.io/cube/assets/img/back.jpg");
 }
 
 #Title {
@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-.User_Name{
+.User_Name {
     border-radius: 5px;
     background-color: rgb(199, 199, 255);
     font-size: x-large;
