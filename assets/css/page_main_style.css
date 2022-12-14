@@ -17,6 +17,7 @@ body {
 
 .User_Name{
     border-radius: 5px;
+    background-color: rgb(199, 199, 255);
     font-size: x-large;
     position: fixed;
     height: 10%;
