@@ -1,4 +1,4 @@
-let Body = document.getElementsByTagName("body")[0];
+let Body = document.getElementById("Body")[0];
 
 function User_Name() {
     let User_Name_dom = document.createElement("div");
