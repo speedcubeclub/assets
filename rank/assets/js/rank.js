@@ -1,4 +1,7 @@
+let Last_Big_N = -Infinity;
+
 function rank_fill() {
+    /*[分钟,秒,毫秒,选手姓名,日期]*/
     let Rank_Block = document.getElementById("Rank_Block");
     let Table = document.createElement("table");
     Table.className = "Table";
@@ -6,17 +9,32 @@ function rank_fill() {
         let New_Person = document.createElement("tr");
         New_Person.className = "New_Person";
 
+        let New_Person_N = document.createElement("td");
+        New_Person_N.className = "New_Person_N";
+        New_Person_N.innerHTML = i + 1;
+
         let New_Person_Time = document.createElement("td");
         New_Person_Time.className = "New_Person_Time";
-        New_Person_Time.innerHTML = Rank_Database[i][0];
+        let ThisTime_index = Infinity;
+        let out_time = "";
+        let index;
+        for (index = 0; index < Rank_Database.length; index++) {
+            if ((Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] < ThisTime_index && (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] > Last_Big_N) {
+                ThisTime_index = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
+                Last_Big_N = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
+                out_time = String(Rank_Database[index][0]) + ":" + String(Rank_Database[index][1]) + "." + String(Rank_Database[index][2]);
+            }
+        }
+        New_Person_Time.innerHTML = out_time;
+
 
         let New_Person_Name = document.createElement("td");
         New_Person_Name.className = "New_Person_Name";
-        New_Person_Name.innerHTML = Rank_Database[i][1];
+        New_Person_Name.innerHTML = Rank_Database[index][3];
 
         let New_Person_Day = document.createElement("td");
         New_Person_Day.className = "New_Person_Day";
-        New_Person_Day.innerHTML = Rank_Database[i][2];
+        New_Person_Day.innerHTML = Rank_Database[index][4];
 
         New_Person.append(New_Person_Time);
         New_Person.append(New_Person_Name);

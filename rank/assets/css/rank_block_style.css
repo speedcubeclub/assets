@@ -9,21 +9,25 @@
 
 .New_Person_Time {
     font-size: large;
-    width: 30%;
+    width: 25%;
     text-align: center;
     font-weight: bold;
 }
 
 .New_Person_Name {
     font-size: large;
-    margin-left: 5%;
-    width: 40%;
+    width: 35%;
     text-align: center;
 }
 
 .New_Person_Day {
     font-size: large;
-    margin-left: 5%;
     width: 30%;
+    text-align: center;
+}
+
+.New_Person_N{
+    font-size: large;
+    width: 10%;
     text-align: center;
 }
