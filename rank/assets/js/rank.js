@@ -13,11 +13,11 @@ function rank_fill() {
         New_Person_N.className = "New_Person_N";
         New_Person_N.innerHTML = i + 1;
         if (i == 0) {
-            New_Person_N.style.color = "gold";
+            New_Person_N.style.backgroundColor = "gold";
         } else if (i == 1) {
-            New_Person_N.style.color = "silver";
+            New_Person_N.style.backgroundColor = "silver";
         } else if (i == 2) {
-            New_Person_N.style.color = "#8B4513";
+            New_Person_N.style.backgroundColor = "#8B4513";
         }
 
         let New_Person_Time = document.createElement("td");
