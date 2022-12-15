@@ -37,6 +37,7 @@ function rank_fill() {
         New_Person_Day.className = "New_Person_Day";
         New_Person_Day.innerHTML = Rank_Database[N_index][4];
 
+        New_Person.append(New_Person_N);
         New_Person.append(New_Person_Time);
         New_Person.append(New_Person_Name);
         New_Person.append(New_Person_Day);
