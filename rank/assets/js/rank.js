@@ -27,9 +27,9 @@ function rank_fill() {
         let N_index;
         let Last_Big_N_Pr;
         for (let index = 0; index < Rank_Database.length; index++) {
-            console.log("循环" + index);
+            console.log("检索数组：" + index);
             if ((Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] < ThisTime_index && (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] > Last_Big_N) {
-                console.log("成功" + index);
+                console.log("成功获取本次最小值：" + index);
                 ThisTime_index = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
                 Last_Big_N_Pr = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
                 out_time = String(Rank_Database[index][0]) + ":" + String(Rank_Database[index][1]) + "." + String(Rank_Database[index][2]);
@@ -42,8 +42,7 @@ function rank_fill() {
 
         let New_Person_Name = document.createElement("td");
         New_Person_Name.className = "New_Person_Name";
-        console.log(N_index);
-        console.log(Rank_Database[N_index][3]);
+        console.log("选手排名成功：" + Rank_Database[N_index][3]);
         New_Person_Name.innerHTML = Rank_Database[N_index][3];
 
         let New_Person_Day = document.createElement("td");
