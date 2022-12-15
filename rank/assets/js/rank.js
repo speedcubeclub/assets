@@ -26,7 +26,9 @@ function rank_fill() {
         let out_time = "";
         let N_index;
         for (let index = 0; index < Rank_Database.length; index++) {
+            console.log("循环"+index);
             if ((Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] < ThisTime_index && (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] > Last_Big_N) {
+                console.log("成功"+index);
                 ThisTime_index = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
                 Last_Big_N = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
                 out_time = String(Rank_Database[index][0]) + ":" + String(Rank_Database[index][1]) + "." + String(Rank_Database[index][2]);
