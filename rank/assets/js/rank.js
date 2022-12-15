@@ -39,6 +39,7 @@ function rank_fill() {
         let New_Person_Name = document.createElement("td");
         New_Person_Name.className = "New_Person_Name";
         console.log(N_index);
+        console.log(Rank_Database[N_index][3]);
         New_Person_Name.innerHTML = Rank_Database[N_index][3];
 
         let New_Person_Day = document.createElement("td");
