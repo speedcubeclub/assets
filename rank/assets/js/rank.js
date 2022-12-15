@@ -12,6 +12,13 @@ function rank_fill() {
         let New_Person_N = document.createElement("td");
         New_Person_N.className = "New_Person_N";
         New_Person_N.innerHTML = i + 1;
+        if (i == 0) {
+            New_Person_N.style.color = "gold";
+        } else if (i == 1) {
+            New_Person_N.style.color = "silver";
+        } else if (i == 2) {
+            New_Person_N.style.color = "#8B4513";
+        }
 
         let New_Person_Time = document.createElement("td");
         New_Person_Time.className = "New_Person_Time";
