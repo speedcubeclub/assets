@@ -17,12 +17,13 @@ function rank_fill() {
         New_Person_Time.className = "New_Person_Time";
         let ThisTime_index = Infinity;
         let out_time = "";
-        let index;
-        for (index = 0; index < Rank_Database.length; index++) {
+        let N_index;
+        for (let index = 0; index < Rank_Database.length; index++) {
             if ((Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] < ThisTime_index && (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2] > Last_Big_N) {
                 ThisTime_index = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
                 Last_Big_N = (Rank_Database[index][0] * 60000) + (Rank_Database[index][1] * 1000) + Rank_Database[index][2];
                 out_time = String(Rank_Database[index][0]) + ":" + String(Rank_Database[index][1]) + "." + String(Rank_Database[index][2]);
+                N_index = index;
             }
         }
         New_Person_Time.innerHTML = out_time;
@@ -30,12 +31,11 @@ function rank_fill() {
 
         let New_Person_Name = document.createElement("td");
         New_Person_Name.className = "New_Person_Name";
-        console.log(index);
-        New_Person_Name.innerHTML = Rank_Database[index][3];
+        New_Person_Name.innerHTML = Rank_Database[N_index][3];
 
         let New_Person_Day = document.createElement("td");
         New_Person_Day.className = "New_Person_Day";
-        New_Person_Day.innerHTML = Rank_Database[index][4];
+        New_Person_Day.innerHTML = Rank_Database[N_index][4];
 
         New_Person.append(New_Person_Time);
         New_Person.append(New_Person_Name);
