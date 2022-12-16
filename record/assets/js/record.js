@@ -4,7 +4,7 @@ function record_fill() {
 [姓名, 时间1, 时间2, 时间3, 最快]]
 */
     let Record_Block = document.getElementById("Record_Block");
-    Record_Block.className("Table");
+    Record_Block.className = "Table";
     for (let i = 0; i < Record_Database.length; i++) {
         let New_Day_Table = document.createElement("table");
         let New_Day_Title_tr = document.createElement("tr");
