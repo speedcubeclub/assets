@@ -44,23 +44,23 @@ function record_fill() {
         for (let j = 0; j < Record_Database[i][1].length; j++) {
             let Name = document.createElement("td");
             Name.className = "Record_Name";
-            Name.innerHTML = Record_Database[i][1][0];
+            Name.innerHTML = Record_Database[i][j][0];
 
             let Times_1 = document.createElement("td");
             Times_1.className = "Record_Times_1";
-            Times_1.innerHTML = Record_Database[i][1][1];
+            Times_1.innerHTML = Record_Database[i][j][1];
 
             let Times_2 = document.createElement("td");
             Times_2.className = "Record_Times_2";
-            Times_2.innerHTML = Record_Database[i][1][2];
+            Times_2.innerHTML = Record_Database[i][j][2];
 
             let Times_3 = document.createElement("td");
             Times_3.className = "Record_Times_3";
-            Times_3.innerHTML = Record_Database[i][1][3];
+            Times_3.innerHTML = Record_Database[i][j][3];
 
             let Times_best = document.createElement("td");
             Times_best.className = "Record_Times_best";
-            Times_best.innerHTML = Record_Database[i][1][4];
+            Times_best.innerHTML = Record_Database[i][j][4];
 
             User_Part.append(Name);
             User_Part.append(Times_1);
