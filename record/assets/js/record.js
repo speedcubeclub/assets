@@ -46,7 +46,7 @@ function record_fill() {
         for (let j = 0; j < Record_Database[i][1].length; j++) {
             let Name = document.createElement("td");
             Name.className = "Record_Name";
-            console.log("Record_Database[i][j][0] = " + Record_Database[i][j][0]);
+            console.log("Record_Database["+i+"]["+j+"][0] = " + Record_Database[i][j][0]);
             Name.innerHTML = Record_Database[i][j][0];
 
             let Times_1 = document.createElement("td");
