@@ -7,7 +7,7 @@ function record_fill() {
 
     for (let i = 0; i < Record_Database.length; i++) {
         let New_Day_Table = document.createElement("table");
-        New_Day_Table.className="table";
+        New_Day_Table.className = "table";
         let New_Day_Title_tr = document.createElement("tr");
         let New_Day_Title = document.createElement("td");
         New_Day_Title.colSpan = "5";
@@ -46,6 +46,7 @@ function record_fill() {
         for (let j = 0; j < Record_Database[i][1].length; j++) {
             let Name = document.createElement("td");
             Name.className = "Record_Name";
+            console.log("Record_Database[i][j][0] = " + Record_Database[i][j][0]);
             Name.innerHTML = Record_Database[i][j][0];
 
             let Times_1 = document.createElement("td");
