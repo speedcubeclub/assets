@@ -18,14 +18,19 @@ function record_fill() {
 
         let th_Name = document.createElement("td");
         th_Name.className = "th_";
+        th_Name.innerHTML = "Name"
         let th_Times_1 = document.createElement("td");
         th_Times_1.className = "th_";
+        th_Times_1.innerHTML = "Try-1"
         let th_Times_2 = document.createElement("td");
         th_Times_2.className = "th_";
+        th_Times_2.innerHTML = "Try-2"
         let th_Times_3 = document.createElement("td");
         th_Times_3.className = "th_";
+        th_Times_3.innerHTML = "Try-3"
         let th_Times_best = document.createElement("td");
         th_Times_best.className = "th_";
+        th_Times_best.innerHTML = "Best"
 
         th_User_Part.append(th_Name);
         th_User_Part.append(th_Times_1);
