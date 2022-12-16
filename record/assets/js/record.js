@@ -42,8 +42,8 @@ function record_fill() {
 
         New_Day_Table.append(th_User_Part);
 
-        let User_Part = document.createElement("tr");
         for (let j = 1; j < Record_Database[i].length; j++) {
+            let User_Part = document.createElement("tr");
             let Name = document.createElement("td");
             Name.className = "Record_Name";
             console.log("Record_Database["+i+"]["+j+"][0] = " + Record_Database[i][j][0]);
@@ -70,8 +70,9 @@ function record_fill() {
             User_Part.append(Times_2);
             User_Part.append(Times_3);
             User_Part.append(Times_best);
+            
+            New_Day_Table.append(User_Part);
         }
-        New_Day_Table.append(User_Part);
 
         Record_Block.append(New_Day_Table);
         let HR_Ne = document.createElement("hr");
