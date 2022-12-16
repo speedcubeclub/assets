@@ -38,7 +38,7 @@ function record_fill() {
         th_User_Part.append(th_Times_3);
         th_User_Part.append(th_Times_best);
 
-        th_User_Part.append(th_User_Part);
+        New_Day_Table.append(th_User_Part);
 
         let User_Part = document.createElement("tr");
         for (let j = 0; j < Record_Database[i][1].length; j++) {
