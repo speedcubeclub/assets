@@ -43,7 +43,7 @@ function record_fill() {
         New_Day_Table.append(th_User_Part);
 
         let User_Part = document.createElement("tr");
-        for (let j = 0; j < Record_Database[i][1].length; j++) {
+        for (let j = 1; j < Record_Database[i].length; j++) {
             let Name = document.createElement("td");
             Name.className = "Record_Name";
             console.log("Record_Database["+i+"]["+j+"][0] = " + Record_Database[i][j][0]);
