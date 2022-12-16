@@ -14,6 +14,27 @@ function record_fill() {
         New_Day_Title_tr.append(New_Day_Title);
         New_Day_Table.append(New_Day_Title_tr);
 
+        let th_User_Part = document.createElement("tr");
+
+        let th_Name = document.createElement("td");
+        th_Name.className = "th_";
+        let th_Times_1 = document.createElement("td");
+        th_Times_1.className = "th_";
+        let th_Times_2 = document.createElement("td");
+        th_Times_2.className = "th_";
+        let th_Times_3 = document.createElement("td");
+        th_Times_3.className = "th_";
+        let th_Times_best = document.createElement("td");
+        th_Times_best.className = "th_";
+
+        th_User_Part.append(th_Name);
+        th_User_Part.append(th_Times_1);
+        th_User_Part.append(th_Times_2);
+        th_User_Part.append(th_Times_3);
+        th_User_Part.append(th_Times_best);
+
+        th_User_Part.append(th_User_Part);
+
         let User_Part = document.createElement("tr");
         for (let j = 0; j < Record_Database[i][1].length; j++) {
             let Name = document.createElement("td");
@@ -35,6 +56,12 @@ function record_fill() {
             let Times_best = document.createElement("td");
             Times_best.className = "Record_Times_best";
             Times_best.innerHTML = Record_Database[i][1][4];
+
+            User_Part.append(Name);
+            User_Part.append(Times_1);
+            User_Part.append(Times_2);
+            User_Part.append(Times_3);
+            User_Part.append(Times_best);
         }
         New_Day_Table.append(User_Part);
 
