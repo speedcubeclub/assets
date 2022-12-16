@@ -11,6 +11,7 @@ function record_fill() {
         let New_Day_Title = document.createElement("td");
         New_Day_Title.colSpan = "5";
         New_Day_Title.className = "New_Day_Title";
+        New_Day_Title.innerHTML = Record_Database[i][0];
         New_Day_Title_tr.append(New_Day_Title);
         New_Day_Table.append(New_Day_Title_tr);
 
