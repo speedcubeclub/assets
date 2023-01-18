@@ -1,0 +1,42 @@
+.table{
+    width: 100%;
+}
+.New_Day_Title{
+    font-size: x-large;
+    text-align: center;
+}
+
+.User_Part{
+    
+}
+
+.Record_Name{
+    font-size: large;
+    width: 20%;
+    text-align: center;
+}
+
+.Record_Times_1{
+    font-size: large;
+    width: 20%;
+    text-align: center;
+}
+
+.Record_Times_2{
+    font-size: large;
+    width: 20%;
+    text-align: center;
+}
+
+.Record_Times_3{
+    font-size: large;
+    width: 20%;
+    text-align: center;
+}
+
+.Record_Times_best{
+    font-size: large;
+    font-weight: 900;
+    width: 20%;
+    text-align: center;
+}
