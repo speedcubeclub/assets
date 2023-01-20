@@ -5,7 +5,7 @@ function rank_fill() {
     let Rank_Block = document.getElementById("Rank_Block");
     let Table = document.createElement("table");
     Table.className = "Table";
-    for (let i = 0; i < Rank_Database.length; i++) {
+    for (let i = 0; i < (Rank_Database.length - 1); i++) {
         let New_Person = document.createElement("tr");
         New_Person.className = "New_Person";
 
